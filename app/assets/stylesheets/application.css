@@ -13,38 +13,3 @@
  *= require_tree .
  *= require_self
  */
-/* app/assets/stylesheets/application.css */
-body {
-  font-family: Arial, sans-serif;
-}
-
-.letter-box {
-  background-color: aqua;
-  width: 50px;
-  height: 50px;
-  font-size: 20px;
-  font-weight: bold;
-}
-
-form {
-  max-width: 400px;
-  margin: 0 auto;
-  background: #f8f9fa;
-  padding: 20px;
-  border-radius: 8px;
-}
-
-h1 {
-  text-align: center;
-  margin-bottom: 30px;
-  text-decoration: underline;
-}
-
-.alert {
-  text-align: center;
-}
-
-.btn {
-  display: block;
-  margin: 0 auto;
-}
