@@ -1,0 +1,15 @@
+<h1>Game</h1>
+
+<h2>Here are your letters:</h2>
+<p><%= @letters.join(' ') %></p>
+
+<%= form_with(url: score_game_path, method: :post, data: { turbo: false }) do |form| %>
+  <%= hidden_field_tag :letters, @letters.join(' ') %>
+
+  <div>
+    <%= form.label :word, "Enter a word:" %>
+    <%= form.text_field :word %>
+  </div>
+
+  <%= form.submit "Submit" %>
+<% end %>
